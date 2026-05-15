@@ -78,12 +78,30 @@ else:
 st.markdown(f"""
 <style>
 
-/* Main Background */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
 
-.stApp {
-    background: linear-gradient(to right, #f4f7fb, #e9f0ff);
-    font-family: 'Segoe UI', sans-serif;
-}
+:root {{
+    {theme_vars}
+}}
+
+/* ── RESET / BASE ── */
+*, *::before, *::after {{ box-sizing: border-box; }}
+#MainMenu, footer, header {{ visibility: hidden; }}
+.block-container {{
+    padding: 0.5rem 3rem 4rem !important;
+    max-width: 1320px !important;
+}}
+
+/* ── APP BG ── */
+.stApp {{
+    background-color: var(--bg-deep);
+    background-image:
+        radial-gradient(ellipse 70% 50% at 20% 0%, var(--radial-1) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 80% 100%, var(--radial-2) 0%, transparent 60%);
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text-main);
+    transition: background-color 0.4s ease, color 0.4s ease;
+}}
 
 /* ── THEME TOGGLE BUTTON ── */
 div[data-testid="column"]:last-child .stButton > button {{
