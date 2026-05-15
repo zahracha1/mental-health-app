@@ -1,4 +1,4 @@
-# 🧠 Mental Health Disorder Prediction System
+#  Mental Health Disorder Prediction System
 
 AI-powered psychiatric disorder classification system developed using Machine Learning and Streamlit.
 
@@ -53,7 +53,7 @@ mental-health-app/
 
 ---
 
-## ▶ Run Locally
+##  Run Locally
 
 Install dependencies:
 
@@ -66,16 +66,6 @@ Run the Streamlit app:
 ```bash
 streamlit run app.py
 ```
-
----
-
-##  Deployment
-
-This project can be deployed easily using:
-
-- Streamlit Community Cloud
-- Render
-- Railway
 
 ---
 
